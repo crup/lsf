@@ -1,0 +1,19 @@
+version: "3"
+services: 
+  lsf-fe: 
+    image: lsf-fe
+    stdin_open: true
+    ports:
+      - "3000:3000"
+    networks: 
+      - mern
+  lsf-be: 
+    image: lsf-be
+    stdin_open: true
+    ports:
+      - "3001:3001"
+    networks: 
+      - mern
+networks: 
+  mern: 
+    driver: bridge
