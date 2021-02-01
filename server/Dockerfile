@@ -1,0 +1,9 @@
+FROM node:14.15.4-alpine3.10
+
+WORKDIR /app/client
+COPY package.json yarn.lock ./
+RUN yarn --silent --frozen-lockfile
+COPY . .
+EXPOSE 3001
+CMD ["yarn", "start"]
+
