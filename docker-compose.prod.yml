@@ -1,0 +1,23 @@
+version: "3"
+services: 
+  lsf-fe: 
+    image: lsf-fe
+    restart: unless-stopped
+    ports: 
+      - "80:80"
+      - "443:443"
+      - "3000:3000"
+    stdin_open: true
+    networks: 
+      - mern
+  lsf-be: 
+    image: lsf-be
+    restart: unless-stopped
+    stdin_open: true
+    ports:
+      - "3001:3001"
+    networks: 
+      - mern
+networks: 
+  mern: 
+    driver: bridge
