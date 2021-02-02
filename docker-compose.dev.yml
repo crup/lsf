@@ -1,19 +1,25 @@
 version: "3"
 services: 
   lsf-fe: 
-    image: lsf-fe
+    image: lsf-fe-dev
     stdin_open: true
     ports:
       - "3000:3000"
     networks: 
       - mern
+    volumes:
+      - ./client/:/app
+      - /usr/src/app/node_modules      
   lsf-be: 
-    image: lsf-be
+    image: lsf-be-dev
     stdin_open: true
     ports:
       - "3001:3001"
     networks: 
       - mern
+    volumes:
+      - ./server/:/app
+      - /usr/src/app/node_modules  
 networks: 
   mern: 
     driver: bridge

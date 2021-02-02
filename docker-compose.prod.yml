@@ -1,7 +1,7 @@
 version: "3"
 services: 
   lsf-fe: 
-    image: lsf-fe
+    image: lsf-fe-prod
     restart: unless-stopped
     ports: 
       - "80:80"
@@ -11,7 +11,7 @@ services:
     networks: 
       - mern
   lsf-be: 
-    image: lsf-be
+    image: lsf-be-prod
     restart: unless-stopped
     stdin_open: true
     ports:
