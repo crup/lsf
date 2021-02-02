@@ -1,4 +1,7 @@
-## React+Node+Docker Boilerplate
+## rapid - next.js & sails.js
+
+# Features
+
 
 ### Commads
 ```Makefile
