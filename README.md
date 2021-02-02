@@ -1,6 +1,6 @@
-### React+Node+Docker Boilerplate
+## React+Node+Docker Boilerplate
 
-## Commads
+### Commads
 ```Makefile
 build-dev:
 	cd client && $(MAKE) build-dev
