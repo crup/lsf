@@ -1,4 +1,24 @@
 ### React+Node+Docker Boilerplate
 
 ## Commads
-https://github.com/crup/lsf/blob/5637f4ccee49274fab60cdba229fb5acff0fe2a1/Makefile#L1-L19
+```Makefile
+build-dev:
+	cd client && $(MAKE) build-dev
+	cd server && $(MAKE) build-dev
+
+run-dev:
+	docker-compose -f docker-compose.dev.yml up
+
+stop-dev:
+	docker-compose  -f docker-compose.dev.yml down
+
+build-prod:
+	cd client && $(MAKE) build-prod
+	cd server && $(MAKE) build-prod
+
+run-prod:
+	ENV=production docker-compose -f docker-compose.prod.yml up
+
+stop-prod:
+	docker-compose  -f docker-compose.prod.yml down
+```
