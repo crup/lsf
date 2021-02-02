@@ -1,7 +1,30 @@
 ## rapid - next.js & sails.js
 
-# Features
+### Features - next.js
+#### next.js
+- [ ] Redux
+- [ ] Tailwind
+#### sails.js
+- [ ] Auth
+#### Docker
+- [x] Devlopment images
+- [x] Production images
 
+#### nginx
+- [ ] Reverse proxy for api server
+
+#### Databases
+- [ ] MongoDB
+- [ ] MySQL
+- [ ] Redis
+- [ ] ElasticSearch
+
+#### 3rd Party services
+- [ ] Thumbor
+- [ ] Caddy
+#### Scripts
+- [x] Docker build scripts
+- [x] Database migration scripts
 
 ### Commads
 ```Makefile
