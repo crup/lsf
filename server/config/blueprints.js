@@ -37,5 +37,8 @@ module.exports.blueprints = {
   ***************************************************************************/
 
   // shortcuts: true,
+  action: false,
+  rest: false,
+  shortcut: false
 
 };
